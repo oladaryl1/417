@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, StyleSheet, Image, TouchableOpacity, Modal, View } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, Image, TouchableOpacity, Modal, View, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 // Import images for each animal
-import animal1Image from '../assets/images/exploreLinks/Coyote.jpg';
-import animal2Image from '../assets/images/exploreLinks/Dekaysnake.jpg';
-import animal3Image from '../assets/images/exploreLinks/Cottontail.jpg';
-import animal4Image from '../assets/images/exploreLinks/Graysquirrel.jpg';
-import animal5Image from '../assets/images/exploreLinks/Foxsquirrel.jpg';
-import animal6Image from '../assets/images/exploreLinks/Brownbat.jpg';
-import animal7Image from '../assets/images/exploreLinks/Meadow.jpg';
-import animal8Image from '../assets/images/exploreLinks/Opossum.jpg';
-import animal9Image from '../assets/images/exploreLinks/Plainsgarter.jpg';
-import animal10Image from '../assets/images/exploreLinks/Prairiecrayfish.jpg';
-import animal11Image from '../assets/images/exploreLinks/Raccoon.jpg';
-import animal12Image from '../assets/images/exploreLinks/Skunk.jpg';
+const animal1Image = require('../assets/images/exploreLinks/Coyote.jpg');
+const animal2Image = require('../assets/images/exploreLinks/Dekaysnake.jpg');
+const animal3Image = require('../assets/images/exploreLinks/Cottontail.jpg');
+const animal4Image = require('../assets/images/exploreLinks/Graysquirrel.jpg');
+const animal5Image = require('../assets/images/exploreLinks/Foxsquirrel.jpg');
+const animal6Image = require('../assets/images/exploreLinks/Brownbat.jpg');
+const animal7Image = require('../assets/images/exploreLinks/Meadow.jpg');
+const animal8Image = require('../assets/images/exploreLinks/Opossum.jpg');
+const animal9Image = require('../assets/images/exploreLinks/Plainsgarter.jpg');
+const animal10Image = require('../assets/images/exploreLinks/Prairiecrayfish.jpg');
+const animal11Image = require('../assets/images/exploreLinks/Raccoon.jpg');
+const animal12Image = require('../assets/images/exploreLinks/Skunk.jpg');
+
 
 function Explore(props) {
     const [showPopup1, setShowPopup1] = useState(false);
@@ -128,7 +129,9 @@ function Explore(props) {
 
     return (
         <LinearGradient colors={['dodgerblue', 'aqua', 'green']} style={styles.background}>
+            <ScrollView contentContainerStyle={styles.scrollViewContent} showsVerticalScrollIndicator={false}>
             <Text style={styles.title}>Other Animals</Text>
+            
 
             <TouchableOpacity style={styles.button} onPress={handleButtonPress1}>
                 <Text style={styles.buttonText}>Coyote</Text>
@@ -381,6 +384,7 @@ function Explore(props) {
                     </View>
                 </View>
             </Modal>
+            </ScrollView>
         </LinearGradient>
     );
 }
@@ -389,7 +393,6 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
     },
     title: {
         fontSize: 23,
@@ -397,18 +400,25 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     button: {
-        backgroundColor: 'darkblue',
+        marginTop: 10,
+        backgroundColor: "darkblue",
         paddingVertical: 10,
         paddingHorizontal: 20,
-        borderRadius: 10,
-        marginTop: 10,
+        borderRadius: 20,
         height: 50,
-        width: 200,
+        minWidth: 200,
     },
     buttonText: {
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
+        textAlign: 'center',
+    },
+    centeredView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "rgba(0,0,0,0.5)",
     },
     modal: {
         flex: 1,

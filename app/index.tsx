@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 40,
         borderRadius: 30,
         marginBottom: 20,
+        overflow: 'hidden',
     },
     audioNavigateText: {
         fontSize: 20,
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 40,
         borderRadius: 30,
         marginBottom: 20,
+        overflow: 'hidden',
     },
     exploreNavigateText: {
         fontSize: 20,

@@ -84,11 +84,11 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     button: {
-        marginTop: 20,
+        marginTop: 10,
         backgroundColor: "darkblue",
         paddingVertical: 10,
         paddingHorizontal: 20,
-        borderRadius: 15,
+        borderRadius: 20,
         height: 50,
         width: 200,
     },
@@ -96,6 +96,7 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: "bold",
         fontSize: 16,
+        textAlign: 'center'
     },
     centeredView: {
         flex: 1,
@@ -118,7 +119,6 @@ const styles = StyleSheet.create({
         elevation: 5
     },
     modalText: {
-        marginBottom: 15,
         textAlign: "center",
         fontSize: 20,
     },

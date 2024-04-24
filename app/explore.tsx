@@ -37,6 +37,8 @@ const styles = StyleSheet.create({
         backgroundColor: "darkblue",
         color: "white",
         paddingVertical: 8,
+        paddingHorizontal: 20,
+        overflow: 'hidden',
         fontSize:20,
         fontWeight:"bold",
         borderRadius: 15,

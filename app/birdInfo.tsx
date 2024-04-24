@@ -3,20 +3,20 @@ import { SafeAreaView, Text, StyleSheet, Image, TouchableOpacity, Modal, View, S
 import { LinearGradient } from 'expo-linear-gradient';
 
 // Import the images
-import americanCrowImage from '../assets/images/exploreLinks/Amcrow.jpg'; // Replace './americanCrowImage.jpg' with the path to your image
-import anotherBirdImage from '../assets/images/exploreLinks/Amgold.jpg'; // Add the path to the new bird image
-import thirdBirdImage from '../assets/images/exploreLinks/Amrobin.jpg'; // Add the path to the third bird image
-import fourthBirdImage from '../assets/images/exploreLinks/Baltimore.jpg'; // Add the path to the fourth bird image
-import fifthBirdImage from '../assets/images/exploreLinks/Black.jpg'; // Add the path to the fifth bird image
-import sixthBirdImage from '../assets/images/exploreLinks/Brown.jpg'; // Add the path to the sixth bird image
-import seventhBirdImage from '../assets/images/exploreLinks/Grackle.jpg'; // Add the path to the seventh bird image
-import eighthBirdImage from '../assets/images/exploreLinks/Starling.jpg'; // Add the path to the eighth bird image
-import ninthBirdImage from '../assets/images/exploreLinks/House.jpg'; // Add the path to the ninth bird image
-import tenthBirdImage from '../assets/images/exploreLinks/Cardinal.jpg'; // Add the path to the tenth bird image
-import eleventhBirdImage from '../assets/images/exploreLinks/Redtail.jpg'; // Add the path to the eleventh bird image
-import twelfthBirdImage from '../assets/images/exploreLinks/Redwing.jpg'; // Add the path to the twelfth bird image
+const americanCrowImage = require('../assets/images/exploreLinks/Amcrow.jpg');
+const anotherBirdImage = require('../assets/images/exploreLinks/Amgold.jpg');
+const thirdBirdImage = require('../assets/images/exploreLinks/Amrobin.jpg');
+const fourthBirdImage = require('../assets/images/exploreLinks/Baltimore.jpg');
+const fifthBirdImage = require('../assets/images/exploreLinks/Black.jpg');
+const sixthBirdImage = require('../assets/images/exploreLinks/Brown.jpg');
+const seventhBirdImage = require('../assets/images/exploreLinks/Grackle.jpg');
+const eighthBirdImage = require('../assets/images/exploreLinks/Starling.jpg');
+const ninthBirdImage = require('../assets/images/exploreLinks/House.jpg');
+const tenthBirdImage = require('../assets/images/exploreLinks/Cardinal.jpg');
+const eleventhBirdImage = require('../assets/images/exploreLinks/Redtail.jpg');
+const twelfthBirdImage = require('../assets/images/exploreLinks/Redwing.jpg');
 
-function Explore(props) {
+function Explore() {
     const [showAmericanCrowInfo, setShowAmericanCrowInfo] = useState(false);
     const [showAnotherBirdInfo, setShowAnotherBirdInfo] = useState(false);
     const [showThirdBirdInfo, setShowThirdBirdInfo] = useState(false);
@@ -195,9 +195,9 @@ function Explore(props) {
                         {/* Add the Third Bird image */}
                         <Image source={thirdBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The American Robin is known as the harbinger of spring. You may find this
-orange-breasted bird hunting for earthworms, or sitting in a tree chirping,
-“cheerily cheer up.”
+                            The American Robin is known as the harbinger of spring. You may find this
+                            orange-breasted bird hunting for earthworms, or sitting in a tree chirping,
+                            “cheerily cheer up.”
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -219,8 +219,8 @@ orange-breasted bird hunting for earthworms, or sitting in a tree chirping,
                         {/* Add the Fourth Bird image */}
                         <Image source={fourthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The brightly-colored Baltimore Oriole sings a whistling song. It eats fruit and
-weaves a nest that hangs high off the ground.
+                            The brightly-colored Baltimore Oriole sings a whistling song. It eats fruit and
+                            weaves a nest that hangs high off the ground.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -242,9 +242,9 @@ weaves a nest that hangs high off the ground.
                         {/* Add the Fifth Bird image */}
                         <Image source={fifthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The Black-capped Chickadee is a tiny bird with a black cap and bib. Known
-for its “chicka-dee-dee-dee” call, the bird often hides seeds to eat later. You
-may see a chickadee hanging upside down on a tree branch.
+                            The Black-capped Chickadee is a tiny bird with a black cap and bib. Known
+                            for its “chicka-dee-dee-dee” call, the bird often hides seeds to eat later. You
+                            may see a chickadee hanging upside down on a tree branch.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -266,8 +266,8 @@ may see a chickadee hanging upside down on a tree branch.
                         {/* Add the Sixth Bird image */}
                         <Image source={sixthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The Brown-headed Cowbird lays its eggs in the nests of other birds, leaving its
-young to be raised by other species. Look for it in fields and meadows..
+                            The Brown-headed Cowbird lays its eggs in the nests of other birds, leaving its
+                            young to be raised by other species. Look for it in fields and meadows..
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -289,8 +289,8 @@ young to be raised by other species. Look for it in fields and meadows..
                         {/* Add the Seventh Bird image */}
                         <Image source={seventhBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The Common Grackle is found in open woodlands and marshes. The species is
-taller and has a longer tail than other similar-looking birds.
+                            The Common Grackle is found in open woodlands and marshes. The species is
+                            taller and has a longer tail than other similar-looking birds.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -312,9 +312,9 @@ taller and has a longer tail than other similar-looking birds.
                         {/* Add the Eighth Bird image */}
                         <Image source={eighthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The European Starling was first brought to New York by Shakespeare
-enthusiasts. The birds are now found across the country, and often move in
-large, noisy flocks.
+                            The European Starling was first brought to New York by Shakespeare
+                            enthusiasts. The birds are now found across the country, and often move in
+                            large, noisy flocks.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -336,8 +336,8 @@ large, noisy flocks.
                         {/* Add the Ninth Bird image */}
                         <Image source={ninthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The House Sparrow is frequently found at backyard feeders, and often nests in
-manmade structures, like the eaves of buildings or in street lights.
+                            The House Sparrow is frequently found at backyard feeders, and often nests in
+                            manmade structures, like the eaves of buildings or in street lights.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -359,9 +359,9 @@ manmade structures, like the eaves of buildings or in street lights.
                         {/* Add the Tenth Bird image */}
                         <Image source={tenthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        The male Northern Cardinal is an eye-catching bright red, while the female is
-mostly brown. Both have a sharp crest and may sound as if they’re saying,
-“Cheer! Cheer! Cheer!” or “Birdie, birdie, birdie!”
+                            The male Northern Cardinal is an eye-catching bright red, while the female is
+                            mostly brown. Both have a sharp crest and may sound as if they’re saying,
+                            “Cheer! Cheer! Cheer!” or “Birdie, birdie, birdie!”
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -383,8 +383,8 @@ mostly brown. Both have a sharp crest and may sound as if they’re saying,
                         {/* Add the Eleventh Bird image */}
                         <Image source={eleventhBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
-                        Look for the Red-tailed Hawk soaring above open fields, where it hunts for
-voles and rabbits. Notice its broad wings and short tail.
+                            Look for the Red-tailed Hawk soaring above open fields, where it hunts for
+                            voles and rabbits. Notice its broad wings and short tail.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -407,8 +407,8 @@ voles and rabbits. Notice its broad wings and short tail.
                         <Image source={twelfthBirdImage} style={styles.modalImage} />
                         <Text style={styles.modalText}>
                             The Red-winged Blackbird is common in the DRNA and other wetlands across
-the U.S. Look for the male’s red and yellow shoulder patches, and listen for its
-conk-la-lee song.
+                            the U.S. Look for the male’s red and yellow shoulder patches, and listen for its
+                            conk-la-lee song.
                         </Text>
                         <TouchableOpacity style={styles.modalCloseButton} onPress={closeModal}>
                             <Text style={styles.modalCloseText}>Close</Text>
@@ -434,18 +434,16 @@ const styles = StyleSheet.create({
         backgroundColor: 'darkblue',
         paddingVertical: 10,
         paddingHorizontal: 20,
-        borderRadius: 10,
-        marginTop: 20,
-        height: 70,
-        width: 200,
+        borderRadius: 20,
+        marginTop: 10,
+        height: 50,
+        minWidth: 200,
     },
     buttonText: {
         color: 'white',
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
-        maxWidth: '100%',
-        overflow: 'hidden',
     },
     modalContainer: {
         flex: 1,
@@ -463,6 +461,8 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 10,
+    
+    
     },
     modalImage: {
         width: 200, // Adjust the width as needed

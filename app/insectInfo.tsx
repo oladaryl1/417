@@ -79,20 +79,22 @@ const styles = StyleSheet.create({
         marginTop: 20,
         fontSize: 23,
         fontWeight: "bold",
+        textAlign: 'center',
     },
     button: {
-        marginTop: 20,
+        marginTop: 10,
         backgroundColor: "darkblue",
         paddingVertical: 10,
         paddingHorizontal: 20,
-        borderRadius: 15,
+        borderRadius: 20,
         height: 50,
-        width: 200,
+        minWidth: 200,
     },
     buttonText: {
         color: "white",
         fontWeight: "bold",
         fontSize: 16,
+        textAlign: 'center',
     },
     centeredView: {
         flex: 1,
@@ -114,15 +116,22 @@ const styles = StyleSheet.create({
         shadowRadius: 4,
         elevation: 5
     },
+    modalContainer: {
+        flex: 1, 
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
     modalText: {
-        marginBottom: 15,
         textAlign: "center",
         fontSize: 20,
     },
     modalImage: {
         width: 200, // Adjust width and height as needed
         height: 200,
-        resizeMode: 'contain', // Adjust resizeMode as needed
+        resizeMode: 'cover', // Adjust resizeMode as needed
+        borderRadius: 10,
+        marginBottom: 10,
     },
 });
 
